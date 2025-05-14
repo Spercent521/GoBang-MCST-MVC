@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>436</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>4</width>
+    <height>2</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>600</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>GOBANG</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>30</y>
+      <width>302</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="selectInterface">
+       <item>
+        <widget class="QLabel" name="Lable_modelSelect">
+         <property name="text">
+          <string>模式：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_model">
+         <property name="currentText">
+          <string>人人对抗</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>人人对抗</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>人机对抗</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>10</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="Lable_boardSelect">
+         <property name="text">
+          <string>棋盘</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_board">
+         <property name="currentText">
+          <string>13*13棋盘</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>13*13棋盘</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>9*9棋盘</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>19*19棋盘</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="GameBegin">
+       <property name="baseSize">
+        <size>
+         <width>60</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>开始对局</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>436</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

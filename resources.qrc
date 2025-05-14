@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/gobang_SZL.png</file>
+    </qresource>
+</RCC>
